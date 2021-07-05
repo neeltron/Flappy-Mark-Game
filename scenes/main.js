@@ -8,16 +8,16 @@ gravity(1200);
 
 // define draw layers and default layer
 layers([
-	"bg",
+	"eee",
 	"obj",
 	"ui",
 ], "obj");
 
 // background image
 add([
-	sprite("bg"),
+	sprite("eee"),
 	scale(width() / 240, height() / 240),
-	layer("bg"),
+	layer("eee"),
 ]);
 
 // a game object consists of a list of components and tags

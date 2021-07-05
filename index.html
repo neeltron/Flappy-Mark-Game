@@ -33,6 +33,7 @@ init({
   clearColor: undefined
 });
   loadSprite("bg", "sprites/bg.png");
+loadSprite("eee", "sprites/eee.jpg");
 loadSprite("mark", "sprites/mark.kbmsprite");
 loadSprite("pipo", "sprites/pipo.png");
 loadSound("wooosh", "sounds/wooosh.ogg");
@@ -47,16 +48,16 @@ gravity(1200);
 
 // define draw layers and default layer
 layers([
-	"bg",
+	"eee",
 	"obj",
 	"ui",
 ], "obj");
 
 // background image
 add([
-	sprite("bg"),
+	sprite("eee"),
 	scale(width() / 240, height() / 240),
-	layer("bg"),
+	layer("eee"),
 ]);
 
 // a game object consists of a list of components and tags
